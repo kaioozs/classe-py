@@ -1,0 +1,27 @@
+class Celular:
+
+    def __init__(self, marca, modelo, armazenamento, preco):
+
+        self.marca = marca
+
+        self.modelo = modelo
+
+        self.armazenamento = armazenamento
+
+        self.preco = preco
+
+
+    def mostrar_detalhes(self):
+
+        print("Detalhes do Celular")
+
+        print(f"Marca: {self.marca}")
+
+        print(f"Modelo: {self.modelo}")
+
+        print(f"Armazenamento: {self.armazenamento} GB")
+
+        print(f"Preço: R${self.preco:.2f}")
+
+        
+
