@@ -23,5 +23,54 @@ class Celular:
 
         print(f"Preço: R${self.preco:.2f}")
 
-        
+        def menu():
+
+    print("Escolha um modelo de celular:")
+
+    print("1 - iPhone 14")
+
+    print("2 - Samsung Galaxy S23")
+
+    print("3 - Xiaomi Redmi Note 12")
+
+    print("4 - Motorola Edge 30")
+
+    print("5 - Poco x7 pro")
+
+
+    escolha = int(input("Digite o número do modelo desejado:"))
+
+
+    match escolha:
+
+        case 1:
+
+            celular = Celular("Apple", "iPhone 14", 128, 6000.00)
+
+        case 2:
+
+            celular = Celular("Samsung", "Galaxy S23", 256, 4900.00)
+
+        case 3:
+
+            celular = Celular("Xiaomi", "Redmi Note 12", 128, 1600.00)
+
+        case 4:
+
+            celular = Celular("Motorola", "Edge 30", 256, 2999.00)
+
+        case 5:
+
+            celular = Celular("Xiaomi", "Poco x7 pro", 512, 5000.00)
+
+        case _:
+
+            print("Opção inválida. Tente novamente.")
+
+            return
+
+
+    celular.mostrar_detalhes()
+
+menu()
 
